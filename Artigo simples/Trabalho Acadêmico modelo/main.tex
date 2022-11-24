@@ -1,0 +1,43 @@
+\documentclass[article,
+hidelinks,
+12pt, 
+a4paper, 
+twoside,
+english,
+brazil]
+{abntex2}
+%----------------------------------------------------
+%INFOS SOBRE TITULO E AUTORES
+\title{Title}
+\author{%
+%\Large\textsc{Autor}\thanks{\href{mailto:mail@mail.com}{mail@mail.com} } ~\\[0ex] %author
+%\large \itshape Departament, Institute, UNIVERSITY ~\\[0ex] % Author's institution
+\Large\textsc{Autor}\thanks{\href{mailto:mail@mail.com}{mail@mail.com} } ~\\[0ex] %Second author
+\large \itshape Departament, Institute, UNIVERSITY ~\\[0ex] % Second author's institution
+~\\[0.5ex]%
+}%
+\date{\today}%
+%------------------------------------------------------
+%CABEÇALHOS:
+\newcommand{\cabecalhodireitotitle}{Professor}%Left Header
+\newcommand{\cabecalhoesquerdotitle}{Discipline}%Left Header
+%
+\newcommand{\cabecalhodireito}{Author}%Left Header
+\newcommand{\cabecalhoesquerdo}{Title}%Right Header
+%------------------------------------------------------
+\input{config}
+%-------------------------------------------------------------
+%DeclareUnicodeCharacter{0301}{********************************}%to check the package-inputenc-error-unicode-char-́-u301
+%-------------------------------------------------------------
+\begin{document}%
+%\pagecolor{yellow!1!orange!3!}%
+\maketitle%
+\thispagestyle{fancytitle}%
+\pagestyle{usuario}
+\begin{OnehalfSpace}
+\input{Texto}%
+\end{OnehalfSpace}
+%\newpage
+\pagestyle{plain}
+\printbibliography[title={Referências Bibliográficas}]
+\end{document}%

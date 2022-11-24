@@ -1,0 +1,47 @@
+%
+%
+%       NÃO MEXER AQUI
+%     SOMENTE NO MAIN.TEX
+%
+%
+%
+\usepackage[english,brazilian]{babel}
+\usepackage[utf8]{inputenc}%specifying to the engine how to process the symbols you're typing.
+\usepackage[T1]{fontenc}%include the accented characters as individual glyphs.
+
+%pacotes de fontes:
+%\usepackage{lmodern} %{lmodern}	% Usa a fonte Latin Modern	
+%\usepackage[defaultsans]{droidsans}
+%\usepackage[default]{comfortaa}
+%\usepackage{cmbright}
+%\usepackage[default]{raleway}
+%\usepackage{fetamont}
+%\usepackage[default]{gillius}
+%\usepackage[light,math]{iwona}
+%\usepackage[thin]{roboto} 
+\usepackage{times}% Usa a fonte Times new roman
+%--------------------------------------------------------------
+\usepackage[top=5mm, bottom=10mm, left=10mm, right=10mm]{geometry}%margens personalizadas
+\usepackage{framed} % puts an ordinary frame box around the region,
+\usepackage{booktabs} % Pacote para deixar tabelas mais bonitas.
+\usepackage{color}	% Pacote de Cores
+\definecolor{shadecolor}{rgb}{0.9,0.9,0.9}
+\usepackage[colorlinks=true,linkcolor=black,anchorcolor=black,citecolor=black,filecolor=black,menucolor=black,runcolor=black,urlcolor=black]{hyperref}%sed to handle cross-referencing commands in LATEX to produce hypertext links
+\usepackage{graphicx}	% Pacote de imagens
+\graphicspath{ {./Images/} }
+\usepackage{microtype} 	% para melhorias de justificação
+\usepackage{amsmath} % ambiente matematico
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{indentfirst}% Indenta o primeiro parágrafo de cada seção.
+\usepackage{enumitem} % Customized lists
+\setlist[itemize]{noitemsep} % Make itemize lists more compact
+\usepackage{array} %permite o uso de tabelas
+\usepackage{longtable} %permite o uso de tabelas em mais de uma pagina
+\usepackage{rotating} %permite rotacionar imagens
+\usepackage{tikz} %permite o desenho de formas geométricas simples dadas suas características
+\usepackage{tabularx}
+\usepackage{ragged2e}%set ragged text and are easily configurable to allow hyphenation
+\usepackage{csquotes}%provides advanced facilities for inline and display quotations
+%\usepackage{setspace}%
+\usepackage[style=apa]{biblatex} %coloque backref=true se quiser que fale em qual pagina foi citado
+\addbibresource{referencias.bib} % Seus arquivos de bibliografia
